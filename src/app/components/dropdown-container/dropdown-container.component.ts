@@ -19,6 +19,7 @@ export class DropdownContainerComponent implements OnInit {
     if(this.active) {
       this._customers = this.customerService.getActiveCustomers();
     } else {
+      this.active = false;
       this._customers = this.customerService.getCustomers();
     }
   }
