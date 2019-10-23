@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { ShowcustomersComponent } from './showcustomers/showcustomers.component';
 import { SelectivePreloadingStrategy } from './selective-preloading-strategy';
+import { HomeComponent } from './components/home/home.component';
+import { ShowcustomersComponent } from './components/showcustomers/showcustomers.component';
 
 
 const routes: Routes = [

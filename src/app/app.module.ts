@@ -7,8 +7,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DropdownPresentorComponent } from './components/dropdown-presentor/dropdown-presentor.component';
 import { DropdownContainerComponent } from './components/dropdown-container/dropdown-container.component';
-import { HomeComponent } from './home/home.component';
-import { ShowcustomersComponent } from './showcustomers/showcustomers.component';
+import { HomeComponent } from './components/home/home.component';
+import { ShowcustomersComponent } from './components/showcustomers/showcustomers.component';
 
 @NgModule({
   declarations: [
