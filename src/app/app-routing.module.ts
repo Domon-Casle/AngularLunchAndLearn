@@ -13,6 +13,10 @@ const routes: Routes = [
   {
     path: 'customer',
     component: ShowcustomersComponent
+  },
+  {
+    path: 'subfeature',
+    loadChildren: './subfeature/subfeature.module#SubfeatureModule'
   }
 ];
 
