@@ -14,5 +14,4 @@ export class DropdownPresentorComponent implements OnInit {
 
   ngOnInit() {
   }
-
 }

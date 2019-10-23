@@ -22,5 +22,4 @@ export class DropdownContainerComponent implements OnInit {
       this._customers = this.customerService.getCustomers();
     }
   }
-
 }
