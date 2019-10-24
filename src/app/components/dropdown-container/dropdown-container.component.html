@@ -1,4 +1,6 @@
 <div class="red">
+    <!-- *ngIf makes it so this tag (and anything under it) is only built onto the DOM if the value is true -->
     <p *ngIf="!active" style="color: white">Showing Inactive</p>
+    <!-- Notice the [list] this is the "Input" into the presentor component -->
     <app-dropdown-presentor [list]="_customers"></app-dropdown-presentor>
 </div>

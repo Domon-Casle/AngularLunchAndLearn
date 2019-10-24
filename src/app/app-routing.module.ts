@@ -16,7 +16,7 @@ const routes: Routes = [
   },
   {
     path: 'subfeature',
-    loadChildren: './subfeature/subfeature.module#SubfeatureModule'
+    loadChildren: './subfeature/subfeature.module#SubfeatureModule' // This will cause lazy loading of the sub module. This means we dont send this 'pack' to the user until they hit this route AKA we only load WHAT they need at that time.
   }
 ];
 

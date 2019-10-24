@@ -17,7 +17,8 @@ export class HomeComponent implements OnInit {
   }
 
   sayHello() {
-    if (this.myName.length === 0) {
+    // You can still do anything that you could in JS in the TS file for most part sometimes its gets converted incorrectly so best to stay in TS if possible
+    if (this.myName && this.myName.length === 0) {
       alert("Please provide a name!");
       this.myName = "Example: Philip Knox";
     } else {

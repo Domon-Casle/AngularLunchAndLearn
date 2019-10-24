@@ -1,14 +1,20 @@
 <div>
     Your Name
 </div>
-<input type="text" [(ngModel)]="myName" >
+<!-- notice the [(ngModel)] this is how you two way bind an dom element to your ts field. [] is one way binding from ts -> dom. () is one way binding for dom -> ts. This means
+     you can do direct casting from your ts to your dom only OR you can do call a function when the field updates so you can do custom logic before assigning it to an property or not
+     even the same property if wanted -->
+<input type="text" [(ngModel)]="myName">
 
 <div>
+    <!-- Much like JS you can still do click events and call JS functions (global) or in this case just from inside the TS file. THAT instance of the object. -->
     <button (click)="sayHello()">Say Hello!</button>
 </div>
 
 <br />
 <div>
+    <!-- Notice the routerLink. This is how you tell the router (See app.component.html router-outlet tag) what to replace the current component with. In this we are saying go to the 'path'
+         customer -->
     <button routerLink="customer">Show Customers</button>
 </div>
 
